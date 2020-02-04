@@ -1,5 +1,5 @@
 
-// This is a demo to show that a private memeber is accessible only with the class scope
+// This is a demo to show that a private member is accessible only within the class scope
 // Also it can be accessed by the instance of the same type.
 // Private var in Human1 is accessed by the Human2, since both are of same type.
 
