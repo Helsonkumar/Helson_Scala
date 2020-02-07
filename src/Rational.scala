@@ -18,7 +18,7 @@ class Rational(n :Int , d : Int) {
   private var den = d / g
   
   //Auxillary constructor : 
-  def this(n : Int) = this(n , 1)
+  //def this(n : Int) = this(n , 1)
   
   def + (that : Rational) : Rational = {
     new Rational(this.num * that.den + that.num * this.den , this.den * that.den)
