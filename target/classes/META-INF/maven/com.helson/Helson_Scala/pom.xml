@@ -8,14 +8,20 @@
 
 	<dependencies>
 
-		
-          <dependency>
+
+		<dependency>
 			<groupId>org.scalatest</groupId>
 			<artifactId>scalatest_2.12</artifactId>
 			<version>3.1.0</version>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.typelevel</groupId>
+			<artifactId>cats-core_2.12</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 
 
 	</dependencies>
