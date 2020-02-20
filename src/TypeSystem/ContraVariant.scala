@@ -16,7 +16,7 @@
 // T must EXPECT LESSS and PROVIDE MORE .
 
 // Here [AnyRef] cab be replaced in place of [String] - Bcz whatever we can do with [String] can be done with [AnyRef] also
-// But [String] cannot be replaced in place of [String] - Bcz String expects the object to be String strictly.Which is more
+// But [String] cannot be replaced in place of [AnyRef] - Bcz String expects the object to be String strictly.Which is more
 // Reason : AnyRef requires less
 //          String requires more
 

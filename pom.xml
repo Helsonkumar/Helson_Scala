@@ -26,6 +26,9 @@
 
 	</dependencies>
 
-
+	<build>
+		<finalName>Helson_Scala</finalName>
+		<sourceDirectory>src</sourceDirectory>
+	</build>
 
 </project>

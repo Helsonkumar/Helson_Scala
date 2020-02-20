@@ -28,7 +28,7 @@ object ContraVariantBooks extends App{
 
 class Publication (val name:String)
 
-class Book(val title:String) extends Publication(title)
+class Book(val title:String) extends Publication(title + "Pub")
 
 object BookListApp {
   
@@ -36,7 +36,7 @@ object BookListApp {
   
   // Here we need Book => AnyRef
   def printBooks(fun : (Book => AnyRef)) = {
-    for(book <- bookSet) println(book.title)
+    for(book <- bookSet) println(fun(book))
   }
   
 }
