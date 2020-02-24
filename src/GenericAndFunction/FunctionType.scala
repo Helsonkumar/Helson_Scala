@@ -13,6 +13,7 @@ object FunctionType extends App {
   // Methods double,Length, sum, product each takes the member of the list and does some computation on them.
   // So lets us define an abstraction of those methods.
 
+  //This is very important to understand this implementation
   val funlist1 = FunIntPair(23, FunIntPair(45, FunIntPair(6, FunIntPair(78, FunIntPair(9, FunIntEnd)))))
   println(funlist1.length)
   println(funlist1.sum)
