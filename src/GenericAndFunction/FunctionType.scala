@@ -22,11 +22,27 @@ object FunctionType extends App {
 }
 
 // Redefined version of LinkedList
-// Here we have used the Generic type apram at the method level alone:
+// Here we have used the Generic type parameter at the method level alone:
 // We have 2 types to be handled : Int and Double
+
+// In general : Structural recursion is the pattern we use to write any transformation function on any algebraic type
+// Fold is the concrete realisation of the structural recursion.
+// So using Fold we can define any transformation function on any Algebraic type
+
+//***********************************************************************************************************************
+/******************************************Fold Pattern**********************************************************
+For an algebraic data type A, fold converts it to a generic type B. Fold is
+a structural recursion with:
+• one function parameter for each case in A;
+• each function can take as parameters the fields for its associated
+class;
+• if A is recursive, any function parameters that refer to a recursive
+field take a parameter of type B.*/
+//***********************************************************************************************************************
+
 sealed trait FunIntList {
 
-  // end is the identity element of each operation
+  // end is the identity element of each operation : () => A (A function which does not takes any param and returns a value (So this can be simply defines as A)
   def fold[A](end: A, f: (Int, A) => A): A = {
     this match {
       case FunIntEnd => end
