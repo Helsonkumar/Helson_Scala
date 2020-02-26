@@ -20,8 +20,7 @@ object GenericTree extends App {
   println(tree.fold[String](value => value, (val1, val2) => val1 + " " + val2))
   
   
-  val emp : Tree[Emp] = Node(Node(Node(Leaf(new Emp("Helson",10)),Leaf(new Emp("Naveena",7)),Leaf(new Emp("Melinda",2))),Node(Node(Leaf(new Emp("Aachi",75)),Leaf(new Emp("Anu",5))),Node(Leaf(new Emp("Mila",3)),Leaf(new Emp("Dimal",7)))))
 
 }
 
-class Emp(Nanem :String , YOE : Int)
+
