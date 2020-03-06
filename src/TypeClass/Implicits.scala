@@ -46,7 +46,7 @@ object Implicits extends App {
 }
 
 object UnitOrder {
-  implicit val orderOnUnit = Ordering.fromLessThan[Order] { (x, y) => x.units < y.units }
+  implicit val orderOnUnit = Ordering.fromLessThan[Order] { (x, y) => x.units > y.units }
 }
 
 object UnitPriceOrder {
