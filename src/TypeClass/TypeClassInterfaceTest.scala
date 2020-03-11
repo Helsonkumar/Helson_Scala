@@ -1,0 +1,22 @@
+package TypeClass
+
+import HtmlifyInstances._
+
+object Test1 extends App {
+  //This uses the implicit instances we have  imported via HtmlifyInstances._
+  println(TypeClassInterface_demo.htmlify(true))
+
+  //This syntactic sugar. This simply invokes the apply method defixned in the companion object of Htmlify Type class
+  println(Htmlify[Boolean].write(true))
+}
+
+//A simple object which expects an implicit parameter which is a type class instance.
+//This is an example for type class interface
+
+// But look, that the only functionality here is given by the type class instance alone and nothing else.
+// So we can define an apply method inside the companion object of the type class itself to give us the required instance.
+object TypeClassInterface_demo {
+  def htmlify[A](inp: A)(implicit writer: Htmlify[A]) = {
+    writer.write(inp)
+  }
+}
