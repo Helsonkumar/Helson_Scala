@@ -12,7 +12,7 @@ object FuncTrait extends App {
 
 // Always prefer sealed trait  : Since this is compiler safe for suggestion during Pattern Matching
 // This is an instance of adding methods in a functional style.
-// If method to be added is dependent on the variables and method within the trait then add that methid inside the trait itself
+// If method to be added is dependent on the variables and method within the trait then add that method inside the trait itself
 // If it depends on the external variables then add it as part of external object.
 // This is a polymorphic way of adding methods and types in functional programming.
 

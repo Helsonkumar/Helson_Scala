@@ -10,7 +10,7 @@ object Htmlify {
     def write(inp: String) = s"This is the default instance ${inp}"
   }
 
-  // This an apply emthod used to give us the instance of the required type
+  // This an apply method used to give us the instance of the required type
   def apply[A](implicit writer: Htmlify[A]) = {
     writer
   }
