@@ -41,7 +41,7 @@ object ListClass {
     val list3  = list1.andThen(x => x*2)
     println(list3(3))
 
-    val x:Option[Int] = Some(5)
+    val x:HelOption[Int] = Some(5)
     println(x)
 
 

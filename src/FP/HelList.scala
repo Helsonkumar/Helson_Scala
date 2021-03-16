@@ -38,7 +38,7 @@ object HelList {
 
 //** In the above companion object method sum and product we have room for abstraction.
 //** The only diff between those 2 function  : What value in Nil condition and what operator must be used for each function.
-//** Convert the subexpression as fucnin argument
+//** Convert the subexpression as function in argument
 //** Try making this tail recursive
 object folder {
 
